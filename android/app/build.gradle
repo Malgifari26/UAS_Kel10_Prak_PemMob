@@ -1,0 +1,69 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+
+    defaultConfig {
+        applicationId "com.kel10.firebaseabsensi"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+        namespace 'com.kel10.firebaseabsensi'
+    }
+
+    buildTypes {
+        release {
+            // signingConfig signingConfigs.debug // Perhatikan bahwa Anda tidak perlu menggunakan signingConfigs.debug untuk build release. Ini biasanya ditetapkan di file keystore.
+            minifyEnabled true // Aktifkan minify jika Anda ingin mengurangi ukuran APK
+            shrinkResources true // Aktifkan shrinkResources untuk mengurangi ukuran sumber daya APK
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro' // Tambahkan proguardFiles jika Anda menggunakan ProGuard
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation platform("com.google.firebase:firebase-bom:32.7.2")
+    implementation 'com.google.firebase:firebase-firestore'
+}
+
+// Apply the Google Services plugin at the bottom of the file
+apply plugin: 'com.google.gms.google-services'
