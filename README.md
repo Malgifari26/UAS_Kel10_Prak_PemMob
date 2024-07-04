@@ -1,58 +1,34 @@
-# NotesApp Mobile
+Tutorial Membuat Aplikasi Absensi dengan Face Detection Flutter
 
-NotesApp is a note-taking application that allows users to create, edit, and delete their notes. This application uses Flutter local storage with sqflite to store and retrieve note data locally on the device.
+# Tutorial Build with Android Studio
+https://youtu.be/ur7pOxQRMPw
 
-## Features
+# Tutorial Build with Step by Step
+https://rivaldi48.blogspot.com/2024/06/tutorial-membuat-aplikasi-absensi-dengan-face-detection-flutter.html
 
-- **Create New Note**: Users can create new notes with a title and content.
-- **Edit Note**: Users can edit existing notes.
-- **Delete Note**: Users can delete notes that are no longer needed.
-- **View Note Details**: Users can view the full details of each note.
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-NZO_QD283u9z3cHQaB1tD-00PLl32KOUu3iEeSswJlVMBBSJMIUPlKWAkuHF251yKcLvkXaF2N3z_Meuci2PUJmAxDUGjJ5D4xBiCoU0upWmNiKBmxdPkg7LeYSYE13UpHCdnTbOm2GY9XQQs-Zb0xxqacWPLr0GZ2qVvCWJUw5L7q0MSieJVBY4Uym_/s1280/Tutorial%20Membuat%20Aplikasi%20Absensi%20dengan%20Face%20Detection%20Flutter.png" data-canonical-src="https://rivaldi48.blogspot.com/2024/06/tutorial-membuat-aplikasi-absensi-dengan-face-detection-flutter.html" style="max-width:100%;">
 
-## Technologies Used
+****If you use the Source Code, please make sure to credit and backlink to [Azhar Rivaldi](https://rivaldi48.blogspot.com/)***
 
-### Frontend
-- **Dart**: The main programming language used for developing this application.
-- **Flutter**: A framework for building responsive and attractive user interfaces.
+## 👇 Click For Support Me :
+<a href="https://sociabuzz.com/azharrvldi_/donate"> 
+<img src="https://github.com/AzharRivaldi/AzharRivaldi/blob/master/Support%20Here.png" width="200" height="200"></a>
 
-### Dependencies
-- **sqflite**: To handle local database storage.
-- **path_provider**: To find commonly used locations on the filesystem.
-- **initl**: To format dates and other localization needs.
+## 📄 License
 
+```
+Copyright (C) Azhar Rivaldi
 
-## Installation
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-1. **Clone this Repository**
-    ```bash
-    git clone https://github.com/adeiskandarzulkarnaen/notesappmobile.git
-    cd notesappmobile
-    ```
+    http://www.apache.org/licenses/LICENSE-2.0
 
-2. **Install Dependencies**
-    ```bash
-    flutter pub get
-    ```
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
-3. **Run the Application**
-    ```bash
-    flutter run
-    ```
-
-## Contributions
-
-Contributions are highly welcomed! If you have ideas for improving this application or find any bugs, please create an issue or pull request in this repository.
-
-## License
-
-This application is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Project Thumbnail 
-
-<p float="left">
-    <img src="./docs/img/notesapp.png" alt="notesapp" width="250">
-    &nbsp;&nbsp;
-    <img src="./docs/img/home_page.png" alt="home_page" width="250">
-    &nbsp;&nbsp;
-    <img src="./docs/img/addnote_page.png" alt="addnote_page" width="250">
-</p>
+```
